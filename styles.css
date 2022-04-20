@@ -1,0 +1,339 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #181719;;
+}
+
+/*Texts -----------------------------*/
+#btn1{
+    font-family: Crimson Pro;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 16px;
+    border: 1px solid white;
+    background-color: #181719;
+    color: white;
+    padding: 8px 7px;
+    width: 103px;
+    margin-top: -1px;
+}
+
+#ico1{
+    width: 28.5px;
+    height: 19px;
+    margin-top: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+/*NavBar -----------------------------------*/
+#navbar{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181719;
+    justify-content: center;
+    align-items: center;
+}
+
+#navcontent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.textnav{
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.textnav:hover{
+    font-weight: 700;
+    border-bottom: 3px solid white;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+    padding-right: 40px;
+}
+
+ul{
+    margin-bottom: 80px;
+}
+
+.close{
+    color: white;
+    float: right;
+    font-size: 4.8rem;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+#text1{
+    font-family: Lora;
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 46px;
+    color: white;
+}
+
+#text2{
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 17px;
+    color: white;
+    max-width: 250px;
+}
+
+#text3{
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+#info{
+    position: relative;
+}
+
+#img1{
+    width: 100%;
+    height: auto;
+    margin-top: 39px;
+}
+
+/*card -------------------------*/
+#card{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #181719;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 19px;
+    padding-top: 17px;
+    padding-bottom: 25px;
+    width: 300px;
+    position: absolute;
+    right: 15px;
+    bottom: -100px;
+}
+
+#img2{
+    border-radius: 150px;
+    width: 60px;
+    height: 60px;
+}
+
+#text4{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 15px;
+    color: white;
+    margin-left: 14px;
+    margin-top: 5px;
+}
+
+#text5{
+    font-family: Montserrat;
+    font-size: 1.0rem;
+    font-weight: 500;
+    line-height: 12px;
+    color: #828282;
+}
+
+#text6{
+    font-family: Lora;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 23px;
+    color: white;
+    width: 210px;
+    margin-top: 14px;
+}
+/*End card -------------------------------*/
+
+#text7{
+    font-family: Montserrat;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+    color: white;
+}
+
+#text8{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 99vh;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+footer{
+    margin-top: auto;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 325px) {
+    #card{
+        right: 5px;
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 950px){
+    #ico1{
+        display: none;
+    }
+
+    #navbar{
+        display: block;
+        position: relative;
+        height: 25px;
+        width: 80%;
+    }
+
+    #navcontent{
+        height: 25px;
+        justify-content: flex-end;
+    }
+
+    .close{
+        display: none;
+    }
+
+    li{
+        float: left;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /*Texts -------------------------------------*/
+    #text1{
+        font-family: Lora;
+        font-size: 4.8rem;
+        font-weight: 500;
+        line-height: 61px;
+    }
+
+    #text2{
+        font-family: Montserrat;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 29px;
+        max-width: 410px;
+        display: block;
+    }
+
+    #text3{
+        font-family: Montserrat;
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    #text4{
+        font-family: Montserrat;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    #text5{
+        font-family: Montserrat;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 15px;
+    }
+
+    #text6{
+        font-family: Lora;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 31px;
+        width: 287px;
+    }
+
+    body{
+        padding-left: 5.34722222222vw;
+        padding-right: 5.34722222222vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 13.8333333333vh;
+    }
+
+    #info{
+        width: 51.1805555556vw;
+    }
+
+    #card{
+        width: 410px;
+        height: 189px;
+        padding-left: 26px;
+        padding-top: 18px;
+    }
+
+    header{
+        margin-top: 40px;
+    }
+
+    #data{
+        width: 40%;
+        align-self: center;
+    }
+}
